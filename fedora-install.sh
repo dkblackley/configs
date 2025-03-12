@@ -15,6 +15,8 @@ sudo dnf update -y
 # Install DNF utilities for repository management
 echo "Installing repository management tools..."
 sudo dnf install -y dnf-plugins-core
+sudo dnf install openssl -y
+
 
 # Add RPM Fusion repositories (free and non-free)
 echo "Adding RPM Fusion repositories..."
@@ -45,6 +47,11 @@ sudo flatpak install -y flathub org.signal.Signal
 echo "Installing Slack..."
 # Using Flatpak for Slack
 sudo flatpak install -y flathub com.slack.Slack
+
+sudo flatpak install -y flathub org.gnome.Extensions
+sudo flatpak install -y flathub org.gnome.Tweaks
+sudo flatpak install -y flathub com.valvesoftware.Steam
+sudo flatpak install -y flathub md.obsidian.Obsidian
 
 # Install Syncthing
 echo "Installing Syncthing..."
