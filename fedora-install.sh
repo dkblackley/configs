@@ -53,6 +53,8 @@ sudo flatpak install -y flathub org.gnome.Tweaks
 sudo flatpak install -y flathub com.valvesoftware.Steam
 sudo flatpak install -y flathub md.obsidian.Obsidian
 
+sudo dnf install -y steam-devices
+
 # Install Syncthing
 echo "Installing Syncthing..."
 sudo dnf install -y syncthing
